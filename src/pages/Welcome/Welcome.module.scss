@@ -1,0 +1,40 @@
+.welcome{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(45deg, var(--violet), rgb(236, 183, 252));
+
+  a{
+    display: grid;
+    place-items: center;
+    width: 340px;
+    height: 50px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: color .3s ease .1s, background-color .3s ease;
+  }
+
+}
+
+.reg{
+  background-color: var(--white);
+  color: var(--violet);
+
+  &:has(+ .login:hover) {
+    background-color: transparent;
+    color: var(--white);
+  }
+}
+
+.login{
+  color: var(--white);
+
+  &:hover{
+    background-color: var(--white);
+    color: var(--violet);
+  }
+}

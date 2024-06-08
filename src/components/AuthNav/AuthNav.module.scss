@@ -1,0 +1,20 @@
+.authNav{
+  display: flex;
+  gap: 16px;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navLink {
+  padding: 5px;
+  color: var(--violet);
+  text-decoration: none;
+  opacity: 0.6;
+  transition: opacity .2s ease-in;
+
+  &:hover,
+  &.active {
+    opacity: 1;
+  }
+}
