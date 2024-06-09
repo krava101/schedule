@@ -7,7 +7,7 @@ function AuthNav() {
   return (
     <div className={s.authNav}>
       <NavLink className={navLink} to={'/registration'}>Registration</NavLink>
-      <NavLink className={navLink} to={'/welcome'}>Log in</NavLink>
+      <NavLink className={navLink} to={'/login'}>Log in</NavLink>
     </div>
   )
 }
